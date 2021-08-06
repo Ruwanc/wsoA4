@@ -123,7 +123,7 @@ server {
 		proxy_pass http://127.0.0.1:8081;
 	}
 
-	location /secret/ {
+	location /secret {
 		#proxy_pass http://127.0.0.1:8081/secret;
 		#alias /var/www/html/;
 		auth_basic "Restricted";
@@ -131,8 +131,8 @@ server {
 
 	}
 
-	location /student/ {
-		alias /var/www/html/student/;
+	location /web0091 {
+		alias /var/www/html/web0091/;
 	}
 
 
